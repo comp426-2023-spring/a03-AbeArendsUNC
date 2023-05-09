@@ -18,7 +18,6 @@ Examples:
                   e.g {"player":"rock","opponent":"scissors","result":"win"}`;
 
 const rules = `Rules for Rock Paper Scissors:
-
 - Scissors CUTS Paper
 - Paper COVERS Rock
 - Rock CRUSHES Scissors`;
