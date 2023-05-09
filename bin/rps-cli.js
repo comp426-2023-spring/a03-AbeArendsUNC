@@ -3,22 +3,23 @@ import minimist from 'minimist'
 
 const args = minimist(process.argv.slice(2));
 
-const help = `
-Play Rock Paper Scissors
- -h or --help --> Help
- -r or --rules --> show the rules
+const help = `Usage: node-rps [SHOT]
+Play Rock Paper Scissors (RPS)
 
- Play:
- node-rps --> Return single player rock-paper-scissors result
- node-rps paper --> Return results for game played
-`
+  -h, --help      display this help message and exit
+  -r, --rules     display the rules and exit
 
-const rules = `
-Rules:
-- Rock smashes scissors
-- Scissors snip paper
-- Paper wraps itself around rock
-`
+Examples:
+  node-rps        Return JSON with single player RPS result.
+                  e.g. {"player":"rock"}
+  node-rps rock   Return JSON with results for RPS played against a simulated opponent.
+                  e.g {"player":"rock","opponent":"scissors","result":"win"}`;
+
+const rules = `Rules for Rock Paper Scissors:
+
+- Scissors CUTS Paper
+- Paper COVERS Rock
+- Rock CRUSHES Scissors`;
 
 if (args.h || args.help) {
     console.log(rules);
