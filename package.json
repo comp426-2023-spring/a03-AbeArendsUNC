@@ -13,9 +13,7 @@
     "node-rpsls": "./bin/rpsls-cli.js"
   },
   "dependencies": {
-    "minimist": "^1.2.8",
-    "minimst": "^0.0.1-security",
-    "node-fetch": "^3.3.1"
+    "minimist": "^1.2.8"
   },
   "type": "module",
   "directories": {
